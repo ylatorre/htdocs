@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    /* Used to position the stacked cards */
+    position: relative;
+}
+
+/* .container__card {
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    
+    height: 100%;
+    width: 100%;
+    
+    z-index: -1;
+    
+    background-color: rgb(255, 255, 255);
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    
+    transform: rotate(5deg);
+} */
+.card {
+    background:linear-gradient(70deg ,pink,rgb(81, 81, 250));
+    /* height: 300px; */
+    width:300px; 
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* border: 1px solid black; */
+    border-radius:5px;
+    overflow: hidden;
+    /* padding: 3px; */
+    text-align: center;
+}
+
+
+.card__cover {
+    width: 100%; 
+    height: 100%;
+    /* border-radius: 5px;
+    overflow: hidden; */
+    /* border: 1px solid black; */
+}
+.card__cover img{
+    width:100%;
+    height:100%;
+    display: block;
+    object-fit: cover;    
+}
+
+.card__content {
+    /* border: 1px solid black;  */
+    /* border-radius:5%;
+    /* Take available height */
+    flex: 1;
+}
+.bdr{
+    padding: 3px;
+    bottom:25px;
+    position: relative;
+}
+
+
+
+gradient: https://www.gradientmagic.com/collection/rainbowstandard
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+
+gradient: https://www.gradientmagic.com/collection/rainbowstandard
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+.avatar {
+    /* Rounded border */
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+
+.avatar__image {
+    /* Rounded border */
+    border-radius: 50%;
+    
+    /* Take full size */
+    position:relative;
+    bottom:50px;
+    height: 100px;
+    width: 100px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+.test{
+    margin:auto;
+    width:450px;
+    height:70%;
+}
+.rainbow {
+    position: relative;
+    z-index: 10;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1%;
+}
+    .rainbow::before {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        left: -50%;
+        top: -50%;
+        width: 200%;
+        height: 200%;
+        background-color: #399953;
+        background-repeat: no-repeat;
+        background-size: 50% 50%, 50% 50%;
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+        background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+        animation: rotate 8s linear infinite;
+    }
+
+    .rainbow::after {
+        content: '';
+        /* position: absolute; */
+        z-index: -1;
+        left: 6px;
+        top: 6px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
+        background: white;
+        border-radius: 5px;
+    }
+
+
+
+    p {
+        /* font-family: Oswald; */
+        /* font-size: 100px; */
+        animation: Color 4s linear infinite;
+        -webkit-animation: Color 4s ease-in-out infinite;
+        text-shadow: 1px 1px black;
+    }
+
+    @keyframes Color {
+        0% {
+            color: #A0D468;
+        }
+
+        20% {
+            color: #00bbff;
+        }
+
+        40% {
+            color: #54ff7f;
+        }
+
+        60% {
+            color: #ff9900;
+        }
+
+        80% {
+            color: #ff0019;
+        }
+
+        90% {
+            color: #5837ad;
+        }
+        100% {
+            color: #A0D468;
+        }
+    }
+
+    /* @-moz-keyframes Color {
+        0% {
+            color: #A0D468;
+        }
+
+        20% {
+            color: #4FC1E9;
+        }
+
+        40% {
+            color: #FFCE54;
+        }
+
+        60% {
+            color: #FC6E51;
+        }
+
+        80% {
+            color: #ED5565;
+        }
+
+        100% {
+            color: #AC92EC;
+        }
+    } */
+/* 
+    @-webkit-keyframes Color {
+        0% {
+            color: #A0D468;
+        }
+
+        20% {
+            color: #4FC1E9;
+        }
+
+        40% {
+            color: #FFCE54;
+        }
+
+        60% {
+            color: #FC6E51;
+        }
+
+        80% {
+            color: #ED5565;
+        }
+
+        100% {
+            color: #AC92EC;
+        }
+    } */
